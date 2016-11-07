@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.tvz.java.vjezbe.controller.UnosClanaController">
+
+   <center>
+      <GridPane prefHeight="403.0" prefWidth="609.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="10.0" prefWidth="221.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="118.0" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+
+         <children>
+            <Label text="Ime člana: " GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label text="Prezime člana: " GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <Label text="OIB člana: " GridPane.halignment="RIGHT" GridPane.rowIndex="3" />       
+            <TextField fx:id="imeClanaTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />     
+            <TextField fx:id="prezimeClanaTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+       		<TextField fx:id="oibClanaTextField" layoutX="304.0" layoutY="73.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+         	<Button onAction="#unesiClana" mnemonicParsing="false" text="Unesi člana" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+         </children>
+
+      </GridPane>
+   </center>
+
+</BorderPane>

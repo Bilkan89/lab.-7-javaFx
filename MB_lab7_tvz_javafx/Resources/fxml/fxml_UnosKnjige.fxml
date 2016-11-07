@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.tvz.java.vjezbe.controller.UnosKnjigeController">
+
+   <center>
+      <GridPane prefHeight="403.0" prefWidth="609.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="10.0" prefWidth="221.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="118.0" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+
+         <children>
+            <Label text="Naziv knjige: " GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label text="Vrsta knjige: " GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <Label text="Godina: " GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+            <Label text="Br. stranica: " GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+            <Label text="Jezik: " GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Label text="Izdavač: " GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+            <Label text="Država izdavača: " GridPane.halignment="RIGHT" GridPane.rowIndex="7" />            
+            <TextField fx:id="NazivKnjigeTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <ComboBox fx:id="VrstaKnjigeComboBox" maxWidth="-Infinity" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <TextField fx:id="GodinaTextField" layoutX="304.0" layoutY="73.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <TextField fx:id="BrStranicaTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <ComboBox fx:id="JezikComboBox" maxWidth="-Infinity" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <TextField fx:id="NazivIzdavacaTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <TextField fx:id="DrzavaIzdavacaTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+			<Button mnemonicParsing="false" onAction="#unesiKnjigu" text="Unesi knjigu" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="TOP" />            
+            
+         </children>
+
+      </GridPane>
+   </center>
+
+</BorderPane>

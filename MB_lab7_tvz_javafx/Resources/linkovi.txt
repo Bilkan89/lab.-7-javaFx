@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=oDr7w9G66pY  -> lab6
+https://www.youtube.com/watch?v=dfqQVi8YSLQ  -> lab7
+http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-info-2157684
+Instalirat plugin e(fx)clipse u Eclipse IDE "Help->Eclipse Marketplace.."
+
+Important note: ControlsFX will only work on JavaFX 8u20 or later. 
+If you are running on earlier versions of Java, please upgrade. 
+If you are still using JavaFX 2.x then unfortunately this library will not work for you.
+

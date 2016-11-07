@@ -1,0 +1,82 @@
+
+.root{
+	-fx-font-family: Helvetica;
+	-fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(230,179,77) 0.0, rgb(137,67,67) 100.0 )rgb(255,0,0);
+	/*-fx-font-size: 12;*/
+	}  /*TESTNA BOJA */
+
+
+
+.text-field.error{
+	-fx-border-color: red;
+	-fx-focus-color: red;
+	}
+
+.combo-box.error {
+	-fx-border-color: red;
+	-fx-focus-color: red;
+	}
+#izbornik{
+
+	-fx-font-smoothing-type: gray ;
+	-fx-background-color: gray;
+	-fx-font-weight: bold;
+	}
+#MenuBarIzbornika{
+		-fx-background-color:
+			linear-gradient(#f0ff35, #a9ff00),
+			radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+		-fx-background-radius: 6, 5;
+		-fx-background-insets: 0, 1;
+		-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4) , 5, 0.0, 0 ,1);
+		-fx-text-fill: #395306;
+		-fx-font-weight: bold;
+		-fx-font-family: "Times New Roman";
+
+	}
+.menu{
+	/*-fx-font-family: Helvetica;
+	-fx-font-weight: 800;
+	 -fx-font-style: normal;
+	 -fx-font-size:10pt; */
+}
+
+.table-column {
+  -fx-alignment: CENTER;
+}
+
+.label{
+	-fx-font-family: Helvetica;
+	-fx-font-weight: 800;
+	-fx-font-style: normal;
+	-fx-font-size:10pt;
+}
+.text-field{
+	-fx-font-family: Helvetica;
+	-fx-font-weight: 800;
+	-fx-font-style: normal;
+	-fx-font-size:10pt;
+}
+.button{
+	-fx-background-color:
+			linear-gradient(#f0ff35, #a9ff00),
+			radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+		-fx-background-radius: 6, 5;
+		-fx-background-insets: 0, 1;
+		-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4) , 5, 0.0, 0 ,1);
+		-fx-text-fill: #395306;
+		-fx-font-weight: bold;
+		-fx-font-family: "Times New Roman";
+}
+.comboBox{
+	-fx-background-color:
+			linear-gradient(#f0ff35, #a9ff00),
+			radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+		-fx-background-radius: 6, 5;
+		-fx-background-insets: 0, 1;
+		-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4) , 5, 0.0, 0 ,1);
+		-fx-text-fill: #395306;
+		-fx-font-weight: bold;
+		-fx-font-family: "Times New Roman";
+}
+

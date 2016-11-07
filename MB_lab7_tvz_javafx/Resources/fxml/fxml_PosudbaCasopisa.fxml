@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumnBase?>
+<?import javafx.scene.control.cell.PropertyValueFactory ?>
+<?import javafx.collections.FXCollections ?>
+
+<BorderPane maxHeight="400.0" 
+			maxWidth="650.0" 
+			minHeight="-Infinity" 
+			minWidth="-Infinity" 
+			prefHeight="400.0" 
+			prefWidth="650.0" 
+			xmlns="http://javafx.com/javafx/8" 
+			xmlns:fx="http://javafx.com/fxml/1" 
+			fx:controller="hr.tvz.java.vjezbe.controller.PosudbaCasopisaController">
+	<top>
+		<GridPane alignment="CENTER" gridLinesVisible="false" hgap="5" prefHeight="115.0" prefWidth="493.0" vgap="5">
+	   		<children>
+	   			<Label text="Naziv časopisa: " />
+	   			<TextField fx:id="pretraziPosudbeCasopisaTextField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+	   			<Button mnemonicParsing="false" onAction="#PretraziPosudbuCasopisa" text="Pretraži" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">Pretraži!</Button>
+	  	 	</children>
+		         <columnConstraints>
+		            <ColumnConstraints />
+		            <ColumnConstraints />
+		         </columnConstraints>
+		         <rowConstraints>
+		            <RowConstraints />
+		            <RowConstraints />
+		         </rowConstraints>
+		</GridPane>
+	</top>
+	<bottom>
+		<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="650.0">
+	     	<children>
+				<TableView fx:id="viewCasopisi" editable="true" layoutX="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="640.0" tableMenuButtonVisible="true">
+						 <!--	<placeholder> <Label text="Prazna tablica"/></placeholder>  -->
+					  <columns>
+						<TableColumn fx:id="columnNazivCasopisa" maxWidth="1.7976931348623157E308" prefWidth="180.0" resizable="false" text="Naziv časopisa" />
+						<TableColumn fx:id="columnImeKorisnika" prefWidth="166.0" resizable="false" text="Ime korisnika" />
+						<TableColumn fx:id="columnPrezimeKorisnika" prefWidth="166.0" resizable="false" text="Prezime korisnika" />
+						<TableColumn fx:id="columnDatumPosudbe" prefWidth="114.0" resizable="false" text="Datum posudbe" />
+					 </columns>
+					 <contextMenu>
+						 <ContextMenu>	                 
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#obrisiPosudbu" text="Obriši označenu posudbu" />
+							</items>
+						</ContextMenu>	                
+					</contextMenu>		
+				</TableView>
+			</children>
+   		</Pane>
+	</bottom>
+</BorderPane>

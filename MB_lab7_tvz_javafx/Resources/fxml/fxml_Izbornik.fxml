@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane prefHeight="450" prefWidth="650" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="hr.tvz.java.vjezbe.controller.IzbornikController">
+		<top>
+			<MenuBar>
+				<menus>
+					<Menu text="Knjige">
+						<items>
+							<MenuItem onAction="#PretraziKnjige" text="Pretraživanje knjiga" />
+							<SeparatorMenuItem />
+							<MenuItem onAction="#UnosNoveKnjige" text="Nova knjiga" />
+						</items>
+					</Menu>
+					<Menu text="Časopisi">
+						<items>
+							<MenuItem onAction="#PretraziC" text="Pretraživanje časopisa" />
+							<SeparatorMenuItem />
+							<MenuItem onAction="#UnosNovogCasopisa" text="Novi časopis" />
+						</items>
+					</Menu>
+					<Menu text="Članovi">
+						<items>
+							<MenuItem onAction="#PretraziClana" text="Pretraživanje članova" />
+							<SeparatorMenuItem />
+							<MenuItem onAction="#UnosNovogClana" text="Novi član" />
+						</items>
+					</Menu>
+           			<Menu mnemonicParsing="false" text="Posudbe">
+             			<items>
+               				<MenuItem onAction="#StanjePosudbeKnjiga" text="Posudbe knjiga" />
+                  			<SeparatorMenuItem mnemonicParsing="false" />
+                  			<MenuItem onAction="#StanjePosudbeCasopisa" text="Posudbe časopisa" />
+              			</items>
+            		</Menu>
+				</menus>
+			</MenuBar>
+		</top>
+		<center>
+
+			<Label>Dobro došli!  Ovo je aplikacija za knjižnice kojom se olakšava rad.</Label>
+		</center>
+</BorderPane>

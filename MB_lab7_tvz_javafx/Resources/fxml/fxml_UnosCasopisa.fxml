@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.tvz.java.vjezbe.controller.UnosCasopisaController">
+
+   <center>
+      <GridPane prefHeight="403.0" prefWidth="609.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="150.0" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="56.0" minHeight="4.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="85.0" minHeight="3.0" prefHeight="35.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="132.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="94.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+
+         <children>
+            <Label text="Naziv časopisa: " GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label text="Vrsta časopisa: " GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <Label text="Godina časopisa: " GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+            <Label text="Mjesec časopisa: " GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+            <Label text="Broj  stranica časopisa: " GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Button onAction="#unesiCasopis" mnemonicParsing="false" text="Unesi časopis" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+            <TextField fx:id="NazivCasopisaTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <TextField fx:id="GodinaCasopisaTextField" layoutX="304.0" layoutY="73.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <TextField fx:id="MjesecCasopisaTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <TextField fx:id="BrojStranicaCasopisaTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <ComboBox fx:id="VrstaCasopisaComboBox" maxWidth="-Infinity" prefWidth="206.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+         </children>
+
+      </GridPane>
+   </center>
+
+</BorderPane>

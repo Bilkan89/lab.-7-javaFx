@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumnBase?>
+<?import javafx.scene.control.cell.PropertyValueFactory ?>
+<?import javafx.collections.FXCollections ?>
+
+<BorderPane maxHeight="400.0" maxWidth="650.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" 
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.tvz.java.vjezbe.controller.PretraziClanoveController">
+
+	<top>
+		<GridPane alignment="CENTER" gridLinesVisible="false" hgap="5" prefHeight="115.0" prefWidth="493.0" vgap="5">
+   <children>
+   			<Label text="Naziv člana: " />
+   			<TextField fx:id="UnosClanaTextField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+   			<Button mnemonicParsing="false" onAction="#PretraziClana" text="Pretraži" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">Dohvati</Button>
+   </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+		</GridPane>
+
+	</top>
+
+
+	<bottom>
+		<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="301.0" prefWidth="417.0" BorderPane.alignment="BOTTOM_CENTER">
+     	 <children>
+		<TableView fx:id="ViewClan" editable="true" layoutX="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="238.0" prefWidth="407.0" tableMenuButtonVisible="true">
+		<!--	<placeholder>
+       			 	<Label text="Prazna tablica"/>
+   				 </placeholder>  -->
+		   <columns>
+
+				<TableColumn fx:id="ColumnImeClana" maxWidth="1.7976931348623157E308" prefWidth="152.0" resizable="false" text="Ime člana" />
+				<TableColumn fx:id="ColumnPrezimeClana" prefWidth="152.0" resizable="false" text="Prezime člana" />
+				<TableColumn fx:id="ColumnOIBClana" prefWidth="89.0" resizable="false" text="OIB člana" />
+
+
+			 </columns>
+				  <contextMenu>
+	                  <ContextMenu>
+	                    <items>
+	                      <MenuItem mnemonicParsing="false" onAction="#obrisi" text="Obriši označeni" />
+	                        <MenuItem mnemonicParsing="false" onAction="#uredi" text="Uredi označeni" />
+	                    </items>
+	                  </ContextMenu>
+	               </contextMenu>
+		</TableView>
+		</children>
+    </Pane>
+
+
+	</bottom>
+
+
+</BorderPane>
